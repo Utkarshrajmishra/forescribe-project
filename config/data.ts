@@ -1,30 +1,30 @@
 export const backgroundImages = [
   [
-    "/image-1-1.svg",
-    "/image-1-2.svg",
-    "/image-1-3.svg",
-    "/image-1-4.svg"
+    "/images/image-1-1.svg",
+    "/images/image-1-2.svg",
+    "/images/image-1-3.svg",
+    "/images/image-1-4.svg"
   ],
   [
-    "/image-2-1.svg",
-    "/image-2-2.svg",
-    "/image-2-3.svg"
+    "/images/image-2-1.svg",
+    "/images/image-2-2.svg",
+    "/images/image-2-3.svg"
   ],
   [
-    "/project-3-1.svg",
-    "/project-3-2.svg",
-    "/project-3-3.svg",
-    "/project-3-4.svg"
+    "/images/project-3-1.svg",
+    "/images/project-3-2.svg",
+    "/images/project-3-3.svg",
+    "/images/project-3-4.svg"
   ],
   [
-    "/project-4-1.svg",
-    "/project-4-2.svg",
-    "/project-4-3.svg"
+    "/images/project-4-1.svg",
+    "/images/project-4-2.svg",
+    "/images/project-4-3.svg"
   ],
   [
-    "/project-5-1.svg",
-    "/project-5-2.svg",
-    "/project-5-3.svg",
-    "/project-5-4.svg"
+    "/images/project-5-1.svg",
+    "/images/project-5-2.svg",
+    "/images/project-5-3.svg",
+    "/images/project-5-4.svg"
   ]
 ];
