@@ -2,9 +2,9 @@
 
 import { useEffect, useState } from "react";
 
-import Image from "next/image";
-
 import { backgroundImages } from "@/config/data";
+
+import Cards from "./Cards";
 
 const imageHeight = 551;
 const imageWidth = 382;
@@ -27,25 +27,17 @@ const BackgroundGrid = () => {
     return () => window.removeEventListener("resize", updateBackground);
   }, []);
 
-  const repeatingColumns = Array.from({ length: totalcols }).map(
+  const repeatedCols = Array.from({ length: totalcols }).map(
     (_, i) => backgroundImages[i % backgroundImages.length]
   );
 
   return (
-    <div className="pointer-events-none fixed inset-0 -z-10 flex gap-2 overflow-hidden">
-      {repeatingColumns.map((column, colIndex) => (
+    <div className="pointer-events-none fixed inset-0 z-10 flex gap-2 overflow-hidden opacity-20">
+      {repeatedCols.map((col, colIndex) => (
         <div key={colIndex} className="flex flex-col gap-2">
           {Array.from({ length: totalrows }).map((_, r) =>
-            column.map((svg: string, i: number) => (
-              <Image
-                key={`${colIndex}-${r}-${i}`}
-                src={svg}
-                alt=""
-                width={374}
-                height={543}
-                className="h-auto w-[374px] object-cover"
-                loading="lazy"
-              />
+            col.map((svg: string, i: number) => (
+              <Cards key={`${colIndex}-${r}-${i}`} svgPath={svg} />
             ))
           )}
         </div>
