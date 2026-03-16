@@ -27,11 +27,11 @@ export default function BackgroundGrid() {
   );
 
   return (
-    <div className="pointer-events-none fixed inset-0 z-10 flex gap-2 overflow-hidden opacity-20">
+    <div className="pointer-events-none px-1.5 fixed inset-0 z-10 flex gap-2 overflow-hidden opacity-20">
       {repeatedCols.map((col, colIndex) => {
         const isSlow = colIndex % 2 === 1;
 
-        const duration = isSlow ? 40 : 22;
+        const duration = isSlow ? 40 : 32;
 
         return (
           <div key={colIndex} className="flex flex-col gap-2 overflow-hidden">
