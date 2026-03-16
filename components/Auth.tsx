@@ -20,12 +20,12 @@ const Auth = () => {
         <div className="font-poppins  flex w-full flex-col gap-4">
           
           <Button variant="primary">
-            <FaGoogle className="h-5 w-5" />
+            <FaGoogle className="size-5" />
             Continue with Google
           </Button>
 
           <Button variant="secondary">
-            <FaMicrosoft className="h-5 w-5" />
+            <FaMicrosoft className="size-5" />
             Continue with Microsoft
           </Button>
 
