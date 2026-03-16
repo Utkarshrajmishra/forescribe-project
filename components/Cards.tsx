@@ -13,6 +13,8 @@ const Cards = ({ svgPath }: CardsProps) => {
       height={543}
       className="h-auto w-[374px] object-cover"
       loading="lazy"
+      role="presentation"
+      aria-hidden="true"
     />
   );
 };

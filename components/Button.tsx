@@ -17,7 +17,7 @@ const Button: React.FC<ButtonProps> = ({
 }) => {
   return (
     <button
-      className={`flex w-full font-poppins cursor-pointer items-center justify-center gap-2 rounded-lg px-3 py-3 text-white ${variants[variant]}`}
+      className={`font-poppins flex w-full cursor-pointer items-center justify-center gap-2 rounded-lg px-3 py-3 text-white ${variants[variant]}`}
       {...props}
     >
       {children}
